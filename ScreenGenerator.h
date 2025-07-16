@@ -22,9 +22,7 @@ ScreenGenerator::ScreenGenerator(map<string, Texture> &textures, float count1, f
 
     pictureF.setColor(Color(255, 255, 255, 0)), mine = false, shown = false, withF = false, buggy = false;
 }
-//void ScreenGenerator::draw(RenderWindow &dubs){
-//    dubs.draw(standard), dubs.draw(overlay), dubs.draw(individual), dubs.draw(pictureF);
-//}
+
 void ScreenGenerator::draw(RenderWindow &dubs, bool gamePaused){
     dubs.draw(standard);
     dubs.draw(individual);
