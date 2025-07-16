@@ -446,20 +446,8 @@ void Game::initSquareSurroundingsAtIndex(int index, int columns, int rows) {
         square[index].surround[2] = &(square[index - (columns - 1)]);
         square[index].surround[1] = &(square[index - columns]);
         square[index].surround[0] = &(square[index - (columns + 1)]);}
-    square[index].newSMILES(forNew);}
-//void Game::draw(RenderWindow &window){
-//    fstream file("files/board_config.cfg");
-//    string line;
-//    getline(file ,line);
-//    int columns = stoi(line);
-//    getline(file, line);
-//    int rows = stoi(line);
-//    for (int index = 0; index < (rows * columns); index++)
-//        square[index].draw(window);
-//    window.draw(face1), window.draw(bugORnot), window.draw(play), window.draw(mainLeaders);
-//    window.draw(daHunda), window.draw(daTen), window.draw(daOne);
-//    window.draw(minute_1), window.draw(minute_2), window.draw(seconds_3), window.draw(seconds_4);
-//}
+    square[index].newSMILES(forNew);
+}
 
 void Game::draw(RenderWindow &window) {
     window.draw(bugORnot), window.draw(daHunda), window.draw(daTen), window.draw(daOne), window.draw(minute_1), window.draw(minute_2), window.draw(seconds_3), window.draw(seconds_4);
