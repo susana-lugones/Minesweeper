@@ -4,10 +4,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(minesweeper)
 
-## If you want to link SFML statically
+## To link SFML statically
 # set(SFML_STATIC_LIBRARIES TRUE)
 
-## In most cases better set in the CMake cache
+## In most cases better set in the CMake cache (adjust accordingly)
 set(SFML_DIR "C:/Users/17863/OneDrive - University of Florida/Desktop/SFML-2.5.1/lib/cmake/SFML")
 
 find_package(SFML 2.5.1 COMPONENTS system window graphics audio REQUIRED)
